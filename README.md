@@ -12,5 +12,5 @@ A repository for DMDD group project.
 - Amey Satwe
 - Aaditya Kasbekar
 - Darshil Shah
-- Priya Shetty
+- Sai Priya Veerabomma
 - Nikita Gupta
