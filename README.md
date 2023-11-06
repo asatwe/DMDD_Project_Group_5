@@ -8,6 +8,8 @@ A repository for DMDD group project.
 
 # [Initial ERD (P2 Deliverable)](./P2/Group5_P2_InitialERD.pdf)
 
+# [Final ERD (P3 Deliverable)](./P3/P3_DMDD_Project.pdf)
+
 ## Members
 - Amey Satwe
 - Aaditya Kasbekar
