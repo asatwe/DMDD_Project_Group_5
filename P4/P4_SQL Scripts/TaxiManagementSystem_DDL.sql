@@ -6,6 +6,7 @@ BEGIN
 END
 GO
 
+
 -- Create a new database named 'TaxiManagementSystem'
 CREATE DATABASE TaxiManagementSystem;
 GO
@@ -104,7 +105,7 @@ GO
 -- Customer Table
 -- This table stores information about customers who use the service.
 CREATE TABLE Customer (
-    CustomerId INT PRIMARY KEY,                             -- Unique identifier for each customer
+    CustomerID INT PRIMARY KEY,                             -- Unique identifier for each customer
     UserID INT FOREIGN KEY REFERENCES [User](UserID),       -- Foreign key referencing the User table to link with user information
     PaymentInfo VARCHAR(255)                                -- Payment information for the customer, such as payment methods or details
 );
@@ -126,7 +127,8 @@ CREATE TABLE Feedback (
     FeedbackID INT PRIMARY KEY NOT NULL,                            -- Unique identifier for each feedback record
     CustomerID INT FOREIGN KEY REFERENCES Customer(CustomerId),     -- Foreign key referencing Customer table
     DriverID INT FOREIGN KEY REFERENCES Driver(DriverID),           -- Foreign key referencing Driver table
-    Message VARCHAR(255) NOT NULL                                   -- Feedback message
+    Message VARCHAR(255) NOT NULL,                                   -- Feedback message
+    Rating Float
 );
 GO
 
@@ -144,6 +146,8 @@ CREATE TABLE RideRequest (
     RequestId INT PRIMARY KEY NOT NULL,                                                 -- Unique identifier for each ride request
     EstimationID INT FOREIGN KEY REFERENCES TripEstimate(EstimationId),                 -- Foreign key referencing TripEstimate table
     VehicleID INT FOREIGN KEY REFERENCES Vehicle(VehicleID),                            -- Foreign key referencing Vehicle table
+    DriverID INT FOREIGN KEY REFERENCES Driver(DriverID),
+    CustomerID INT FOREIGN KEY REFERENCES Customer(CustomerID),
     RequestType VARCHAR(50) NOT NULL,                                                   -- Type of the ride request
     ReqDateTime DATETIME NOT NULL,                                                      -- Timestamp of the ride request
     PickUpLocationLatitude DECIMAL(10, 6) NOT NULL,                                     -- Latitude of the pickup location
@@ -232,13 +236,13 @@ VALUES
     (5, 1, 5, 'DL567890');
 
 -- Inserting Data in Feedback Table
-INSERT INTO Feedback (FeedbackID, CustomerID, DriverID, Message)
+INSERT INTO Feedback (FeedbackID, CustomerID, DriverID, Message,Rating)
 VALUES 
-    (1, 1, 2, 'Excellent service!'),
-    (2, 3, 4, 'Driver was punctual.'),
-    (3, 5, 1, 'Vehicle was clean and well-maintained.'),
-    (4, 2, 3, 'Smooth and safe driving.'),
-    (5, 4, 5, 'Driver was courteous.');
+    (1, 1, 2, 'Excellent service!',2.5),
+    (2, 3, 2, 'Driver was punctual.',3),
+    (3, 5, 1, 'Vehicle was clean and well-maintained.',5),
+    (4, 2, 3, 'Smooth and safe driving.',4),
+    (5, 4, 1, 'Driver was courteous.',5);
 
 -- Inserting Data in TripEstimate Table
 INSERT INTO TripEstimate (EstimationId, VehicleID, CurrentTime, Cost)
@@ -250,15 +254,15 @@ VALUES
     (5, 5, '2023-11-28 22:15:00', 55.80);
 
 -- Inserting Data in RideRequest Table
-INSERT INTO RideRequest (RequestId, EstimationID, VehicleID, RequestType, ReqDateTime, 
+INSERT INTO RideRequest (RequestId, EstimationID, VehicleID,DriverID, CustomerID,RequestType, ReqDateTime, 
     PickUpLocationLatitude, PickUpLocationLongitude, DestinationLocationLatitude, 
     DestinationLocationLongitude, TripType, TripCompletionFlag, PickUpLocation, DestinationLocation)
 VALUES 
-    (1, 1, 2, 'City Cab', '2023-11-24 09:00:00', 40.7128, -74.0060, 40.7414, -73.9906, 'City Cab', 1, '123 Main St', '456 Broadway'),
-    (2, 2, 4, 'Out Station Cab', '2023-11-25 15:00:00', 34.0522, -118.2437, 37.7749, -122.4194, 'Out Station Cab', 0, '789 Oak St', '101 Pine St'),
-    (3, 3, 1, 'City Cab', '2023-11-26 11:00:00', 41.8781, -87.6298, 39.9526, -75.1652, 'City Cab', 1, '567 Elm St', '202 Walnut St'),
-    (4, 4, 3, 'Out Station Cab', '2023-11-27 19:00:00', 29.7604, -95.3698, 32.7767, -96.7970, 'Out Station Cab', 0, '890 Maple St', '303 Oak St'),
-    (5, 5, 5, 'City Cab', '2023-11-28 23:00:00', 34.0522, -118.2437, 34.0522, -118.2437, 'City Cab', 1, '111 Pine St', '999 Maple St');
+    (1, 1, 2, 1,1,'City Cab', '2023-11-24 09:00:00', 40.7128, -74.0060, 40.7414, -73.9906, 'City Cab', 1, '123 Main St', '456 Broadway'),
+    (2, 2, 4, 1,2,'Out Station Cab', '2023-11-25 15:00:00', 34.0522, -118.2437, 37.7749, -122.4194, 'Out Station Cab', 0, '789 Oak St', '101 Pine St'),
+    (3, 3, 1, 1,3,'City Cab', '2023-11-26 11:00:00', 41.8781, -87.6298, 39.9526, -75.1652, 'City Cab', 1, '567 Elm St', '202 Walnut St'),
+    (4, 4, 3, 2,4,'Out Station Cab', '2023-11-27 19:00:00', 29.7604, -95.3698, 32.7767, -96.7970, 'Out Station Cab', 0, '890 Maple St', '303 Oak St'),
+    (5, 5, 5, 2,5,'City Cab', '2023-11-28 23:00:00', 34.0522, -118.2437, 34.0522, -118.2437, 'City Cab', 1, '111 Pine St', '999 Maple St');
 
 -- Inserting Data in ServiceRequest Table
 INSERT INTO ServiceRequest (SerReqId, VehicleId, ServiceId, ReqDateTime, ServiceDueDate, PreviousServiceDate)
@@ -310,3 +314,8 @@ SELECT * FROM ServiceRequest;
 
 -- Displaying Data from InsuranceLogs Table
 SELECT * FROM InsuranceLogs;
+
+
+
+
+
