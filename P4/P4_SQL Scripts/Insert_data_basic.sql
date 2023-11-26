@@ -1,4 +1,7 @@
 -- Inserting Data in Service Table
+use TaxiManagementSystem;
+go
+
 INSERT INTO Service (ServiceId, ServiceCompanyName, ServiceName, ServiceDetails)
 VALUES 
     (1, 'ABC Service Company', 'Regular Maintenance', 'Scheduled maintenance and inspection'),
