@@ -1,102 +1,100 @@
-INSERT INTO Vehicle (VehicleId, VehicleType, ServiceInfo, InsuranceInfo)
-VALUES
-    (1, 'Electric Car', 'Family-friendly model', 'YES'),
-    (2, 'Hatchback', 'Fuel-efficient model', 'NO'),
-    (3, 'Compact', 'Luxury vehicle maintenance', 'YES'),
-    (4, 'Electric Car', 'Specialized care', 'NO'),
-    (5, 'Hatchback', 'Heavy-duty maintenance', 'YES'),
-    (6, 'Convertible', 'Family-friendly model', 'NO'),
-    (7, 'Truck', 'Regularly serviced', 'YES'),
-    (8, 'Limousine', 'Regularly serviced', 'NO'),
-    (9, 'Convertible', 'Fuel-efficient model', 'YES'),
-    (10, 'Motorcycle', 'Fuel-efficient model', 'NO'),
-    (11, 'Compact', 'Heavy-duty maintenance', 'YES'),
-    (12, 'Limousine', 'Heavy-duty maintenance', 'NO'),
-    (13, 'Electric Car', 'Luxury vehicle maintenance', 'YES'),
-    (14, 'Sedan', 'Monthly check-ups', 'NO'),
-    (15, 'Hatchback', 'Heavy-duty maintenance', 'YES'),
-    (16, 'Compact', 'Heavy-duty maintenance', 'NO'),
-    (17, 'Limousine', 'Battery system inspection', 'YES'),
-    (18, 'Hatchback', 'Specialized care', 'NO'),
-    (19, 'Truck', 'Battery system inspection', 'YES'),
-    (20, 'Compact', 'Specialized care', 'NO'),
-    (21, 'Motorcycle', 'Specialized care', 'YES'),
-    (22, 'Limousine', 'Specialized care', 'NO'),
-    (23, 'Truck', 'Fuel-efficient model', 'YES'),
-    (24, 'Limousine', 'Bi-annual check-ups', 'NO'),
-    (25, 'Limousine', 'Bi-annual check-ups', 'YES'),
-    (26, 'Motorcycle', 'Specialized care', 'NO'),
-    (27, 'Hatchback', 'Family-friendly model', 'YES'),
-    (28, 'Minivan', 'Bi-annual check-ups', 'NO'),
-    (29, 'Convertible', 'Battery system inspection', 'YES'),
-    (30, 'Electric Car', 'Family-friendly model', 'NO'),
-    (31, 'Sedan', 'Battery system inspection', 'YES'),
-    (32, 'SUV', 'Heavy-duty maintenance', 'NO'),
-    (33, 'SUV', 'Luxury vehicle maintenance', 'YES'),
-    (34, 'Compact', 'Heavy-duty maintenance', 'NO'),
-    (35, 'Minivan', 'Specialized care', 'YES'),
-    (36, 'Convertible', 'Monthly check-ups', 'NO'),
-    (37, 'Sedan', 'Specialized care', 'YES'),
-    (38, 'Convertible', 'Regularly serviced', 'NO'),
-    (39, 'Limousine', 'Regularly serviced', 'YES'),
-    (40, 'SUV', 'Heavy-duty maintenance', 'NO'),
-    (41, 'Convertible', 'Luxury vehicle maintenance', 'YES'),
-    (42, 'Motorcycle', 'Regularly serviced', 'NO'),
-    (43, 'Minivan', 'Specialized care', 'YES'),
-    (44, 'Sedan', 'Specialized care', 'NO'),
-    (45, 'Electric Car', 'Bi-annual check-ups', 'YES'),
-    (46, 'Hatchback', 'Heavy-duty maintenance', 'NO'),
-    (47, 'Convertible', 'Bi-annual check-ups', 'YES'),
-    (48, 'Minivan', 'Specialized care', 'NO'),
-    (49, 'Sedan', 'Bi-annual check-ups', 'YES'),
-    (50, 'Convertible', 'Heavy-duty maintenance', 'NO'),
-    (51, 'SUV', 'Battery system inspection', 'YES'),
-    (52, 'Limousine', 'Battery system inspection', 'NO'),
-    (53, 'Motorcycle', 'Fuel-efficient model', 'YES'),
-    (54, 'Limousine', 'Regularly serviced', 'NO'),
-    (55, 'Limousine', 'Monthly check-ups', 'YES'),
-    (56, 'Sedan', 'Battery system inspection', 'NO'),
-    (57, 'Sedan', 'Battery system inspection', 'YES'),
-    (58, 'SUV', 'Luxury vehicle maintenance', 'NO'),
-    (59, 'Motorcycle', 'Monthly check-ups', 'YES'),
-    (60, 'Truck', 'Monthly check-ups', 'NO'),
-    (61, 'Motorcycle', 'Bi-annual check-ups', 'YES'),
-    (62, 'Hatchback', 'Specialized care', 'NO'),
-    (63, 'Truck', 'Specialized care', 'YES'),
-    (64, 'Hatchback', 'Bi-annual check-ups', 'NO'),
-    (65, 'Truck', 'Family-friendly model', 'YES'),
-    (66, 'Limousine', 'Battery system inspection', 'NO'),
-    (67, 'Minivan', 'Luxury vehicle maintenance', 'YES'),
-    (68, 'SUV', 'Monthly check-ups', 'NO'),
-    (69, 'Motorcycle', 'Specialized care', 'YES'),
-    (70, 'Hatchback', 'Regularly serviced', 'NO'),
-    (71, 'SUV', 'Monthly check-ups', 'YES'),
-    (72, 'Motorcycle', 'Luxury vehicle maintenance', 'NO'),
-    (73, 'Sedan', 'Regularly serviced', 'YES'),
-    (74, 'Electric Car', 'Fuel-efficient model', 'NO'),
-    (75, 'Truck', 'Specialized care', 'YES'),
-    (76, 'Limousine', 'Luxury vehicle maintenance', 'NO'),
-    (77, 'Truck', 'Luxury vehicle maintenance', 'YES'),
-    (78, 'Compact', 'Specialized care', 'NO'),
-    (79, 'Sedan', 'Battery system inspection', 'YES'),
-    (80, 'Minivan', 'Specialized care', 'NO'),
-    (81, 'SUV', 'Luxury vehicle maintenance', 'YES'),
-    (82, 'Electric Car', 'Specialized care', 'NO'),
-    (83, 'Truck', 'Regularly serviced', 'YES'),
-    (84, 'SUV', 'Luxury vehicle maintenance', 'NO'),
-    (85, 'Limousine', 'Specialized care', 'YES'),
-    (86, 'Electric Car', 'Battery system inspection', 'NO'),
-    (87, 'Minivan', 'Fuel-efficient model', 'YES'),
-    (88, 'Limousine', 'Specialized care', 'NO'),
-    (89, 'Hatchback', 'Bi-annual check-ups', 'YES'),
-    (90, 'Minivan', 'Specialized care', 'NO'),
-    (91, 'Hatchback', 'Regularly serviced', 'YES'),
-    (92, 'SUV', 'Bi-annual check-ups', 'NO'),
-    (93, 'Truck', 'Specialized care', 'YES'),
-    (94, 'Truck', 'Heavy-duty maintenance', 'NO'),
-    (95, 'Minivan', 'Family-friendly model', 'YES'),
-    (96, 'Sedan', 'Specialized care', 'NO'),
-    (97, 'Limousine', 'Specialized care', 'YES'),
-    (98, 'Motorcycle', 'Battery system inspection', 'NO'),
-    (99, 'SUV', 'Regularly serviced', 'YES'),
-    (100, 'Compact', 'Monthly check-ups', 'NO');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (1, 'Sedan', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (2, 'Minivan', 'Fuel-efficient model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (3, 'Compact', 'Regularly serviced', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (4, 'Truck', 'Family-friendly model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (5, 'Electric Car', 'Monthly check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (6, 'Sedan', 'Luxury vehicle maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (7, 'SUV', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (8, 'Motorcycle', 'Luxury vehicle maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (9, 'Compact', 'Family-friendly model', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (10, 'Electric Car', 'Heavy-duty maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (11, 'Electric Car', 'Fuel-efficient model', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (12, 'SUV', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (13, 'Electric Car', 'Heavy-duty maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (14, 'Convertible', 'Fuel-efficient model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (15, 'Limousine', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (16, 'Electric Car', 'Fuel-efficient model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (17, 'Sedan', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (18, 'Electric Car', 'Fuel-efficient model', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (19, 'Motorcycle', 'Heavy-duty maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (20, 'Convertible', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (21, 'Truck', 'Battery system inspection', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (22, 'Electric Car', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (23, 'Hatchback', 'Battery system inspection', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (24, 'Compact', 'Luxury vehicle maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (25, 'Limousine', 'Regularly serviced', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (26, 'SUV', 'Fuel-efficient model', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (27, 'Minivan', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (28, 'Minivan', 'Battery system inspection', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (29, 'Sedan', 'Regularly serviced', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (30, 'Compact', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (31, 'Motorcycle', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (32, 'Electric Car', 'Regularly serviced', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (33, 'Motorcycle', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (34, 'Compact', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (35, 'SUV', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (36, 'Compact', 'Luxury vehicle maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (37, 'Sedan', 'Family-friendly model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (38, 'Sedan', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (39, 'Limousine', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (40, 'Hatchback', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (41, 'SUV', 'Regularly serviced', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (42, 'Sedan', 'Monthly check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (43, 'Compact', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (44, 'Limousine', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (45, 'Compact', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (46, 'Convertible', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (47, 'Sedan', 'Heavy-duty maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (48, 'Motorcycle', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (49, 'SUV', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (50, 'SUV', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (51, 'Motorcycle', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (52, 'Motorcycle', 'Bi-annual check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (53, 'Electric Car', 'Luxury vehicle maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (54, 'Minivan', 'Bi-annual check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (55, 'SUV', 'Monthly check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (56, 'Minivan', 'Heavy-duty maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (57, 'Hatchback', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (58, 'Limousine', 'Monthly check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (59, 'Truck', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (60, 'Hatchback', 'Monthly check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (61, 'Electric Car', 'Monthly check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (62, 'SUV', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (63, 'Hatchback', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (64, 'Truck', 'Bi-annual check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (65, 'Sedan', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (66, 'Electric Car', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (67, 'Sedan', 'Bi-annual check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (68, 'Compact', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (69, 'Minivan', 'Battery system inspection', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (70, 'Convertible', 'Heavy-duty maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (71, 'Truck', 'Fuel-efficient model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (72, 'Minivan', 'Heavy-duty maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (73, 'SUV', 'Regularly serviced', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (74, 'Convertible', 'Monthly check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (75, 'Sedan', 'Bi-annual check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (76, 'Sedan', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (77, 'Convertible', 'Bi-annual check-ups', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (78, 'Limousine', 'Family-friendly model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (79, 'Compact', 'Regularly serviced', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (80, 'Sedan', 'Battery system inspection', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (81, 'Sedan', 'Bi-annual check-ups', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (82, 'SUV', 'Family-friendly model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (83, 'Compact', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (84, 'Convertible', 'Regularly serviced', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (85, 'Compact', 'Luxury vehicle maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (86, 'Electric Car', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (87, 'Sedan', 'Family-friendly model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (88, 'Minivan', 'Luxury vehicle maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (89, 'Compact', 'Luxury vehicle maintenance', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (90, 'Compact', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (91, 'SUV', 'Specialized care', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (92, 'Hatchback', 'Fuel-efficient model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (93, 'Minivan', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (94, 'Motorcycle', 'Fuel-efficient model', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (95, 'Electric Car', 'Regularly serviced', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (96, 'Minivan', 'Battery system inspection', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (97, 'Limousine', 'Luxury vehicle maintenance', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (98, 'Limousine', 'Family-friendly model', 'Y');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (99, 'Electric Car', 'Specialized care', 'N');
+insert into Vehicle_MOCK_DATA (vehicleid, vehicletype, serviceinfo, insuranceinfo) values (100, 'Compact', 'Specialized care', 'N');

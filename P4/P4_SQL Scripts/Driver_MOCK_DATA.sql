@@ -1,42 +1,40 @@
-INSERT INTO Driver (DriverID, UserID, VehicleID, LicenseInfo)
-VALUES
-    (1, 99, 33, 'DL3S2X1'),
-    (2, 78, 97, 'DL6Y3S5'),
-    (3, 61, 39, 'DL9N5E7'),
-    (4, 64, 48, 'DL6B2T7'),
-    (5, 62, 13, 'DL3S2X1'),
-    (6, 62, 53, 'DL3S2X1'),
-    (7, 98, 60, 'DL3S7A6'),
-    (8, 82, 67, 'DL3F2C7'),
-    (9, 69, 95, 'DL8L2U6'),
-    (10, 81, 66, 'DL6Y9G2'),
-    (11, 82, 78, 'DL3F1H7'),
-    (12, 82, 62, 'DL4F3V6'),
-    (13, 68, 85, 'DL5A4G8'),
-    (14, 86, 100, 'DL1E9B4'),
-    (15, 63, 4, 'DL5G8C4'),
-    (16, 74, 85, 'DL2L7V9'),
-    (17, 63, 28, 'DL3H5L7'),
-    (18, 85, 97, 'DL5A4G8'),
-    (19, 97, 73, 'DL5K7Y3'),
-    (20, 79, 75, 'DL4Q1S8'),
-    (21, 85, 21, 'DL4P7B3'),
-    (22, 78, 20, 'DL5H7J4'),
-    (23, 89, 39, 'DL4X1A5'),
-    (24, 89, 29, 'DL9G5R1'),
-    (25, 66, 74, 'DL6B2T7'),
-    (26, 73, 26, 'DL6Y9G2'),
-    (27, 94, 95, 'DL1J6R9'),
-    (28, 71, 30, 'DL4R2L5'),
-    (29, 99, 45, 'DL1G8E6'),
-    (30, 74, 23, 'DL4P7B3'),
-    (31, 68, 13, 'DL4R2L5'),
-    (32, 96, 93, 'DL7Z3P8'),
-    (33, 83, 10, 'DL6Y3S5'),
-    (34, 72, 55, 'DL8U2P4'),
-    (35, 89, 49, 'DL1V4T9'),
-    (36, 71, 21, 'DL8X3L5'),
-    (37, 85, 11, 'DL1J4W2'),
-    (38, 66, 85, 'DL9G5R1'),
-    (39, 98, 24, 'DL4Q1S8'),
-    (40, 73, 67, 'DL5H8G7');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (1, 98, 54, 'DL5N8S4');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (2, 1, 22, 'DL9W1N8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (3, 96, 34, 'DL5K7Y3');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (4, 67, 14, 'DL5A4G8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (5, 1, 26, 'DL6Y3S5');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (6, 24, 40, 'DL3X6P7');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (7, 82, 35, 'DL5A4G8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (8, 40, 76, 'DL6Y3S5');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (9, 7, 24, 'DL6Y3S5');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (10, 17, 61, 'DL4B8L3');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (11, 57, 66, 'DL5U8B4');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (12, 11, 61, 'DL4P7B3');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (13, 81, 91, 'DL4R2L5');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (14, 76, 6, 'DL4R2L5');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (15, 13, 16, 'DL8F6V2');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (16, 41, 13, 'DL9N2R8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (17, 76, 90, 'DL1V4T9');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (18, 94, 28, 'DL5A4G8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (19, 99, 68, 'DL4Q1S8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (20, 25, 48, 'DL2L7V9');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (21, 78, 58, 'DL2B8J7');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (22, 44, 88, 'DL1J6C9');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (23, 88, 19, 'DL4H6V2');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (24, 12, 92, 'DL3X6P7');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (25, 55, 90, 'DL4F3V6');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (26, 24, 91, 'DL5N8S4');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (27, 42, 38, 'DL7Z3P8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (28, 29, 55, 'DL2X1W5');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (29, 39, 44, 'DL1P8J6');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (30, 85, 15, 'DL4Q6Z1');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (31, 65, 96, 'DL9W1N8');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (32, 62, 81, 'DL5K7Y3');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (33, 5, 51, 'DL6W4U9');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (34, 61, 41, 'DL7H6T1');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (35, 68, 99, 'DL8F6V2');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (36, 38, 84, 'DL9G5R1');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (37, 97, 18, 'DL2B7J4');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (38, 31, 31, 'DL9T3E2');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (39, 73, 76, 'DL9B8J2');
+insert into Driver_MOCK_DATA (DriverID, UserID, VehicleID, LicenseInfo) values (40, 83, 89, 'DL8P6X4');

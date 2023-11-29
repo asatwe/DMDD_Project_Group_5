@@ -1,32 +1,30 @@
-INSERT INTO TripEstimate (EstimationId, VehicleID, CurrentTime, Cost)
-VALUES
-    (1, 6, '2023-01-09 16:18:32', 136.79),
-    (2, 42, '2023-03-31 17:03:57', 212.58),
-    (3, 100, '2023-06-06 16:23:58', 80.01),
-    (4, 77, '2023-11-05 21:36:50', 161.23),
-    (5, 79, '2023-01-31 02:53:36', 92.44),
-    (6, 7, '2023-01-29 15:31:10', 95.26),
-    (7, 20, '2023-02-24 21:57:42', 167.70),
-    (8, 5, '2023-08-24 19:07:02', 143.82),
-    (9, 33, '2023-04-14 14:20:42', 204.31),
-    (10, 64, '2023-02-22 17:43:18', 118.61),
-    (11, 78, '2023-01-07 06:39:50', 127.48),
-    (12, 94, '2023-01-09 07:37:57', 55.50),
-    (13, 65, '2023-06-22 10:35:58', 31.12),
-    (14, 44, '2023-01-27 20:37:01', 164.01),
-    (15, 22, '2023-11-19 06:43:08', 68.95),
-    (16, 59, '2023-01-25 21:52:32', 193.36),
-    (17, 40, '2023-03-30 16:19:16', 136.09),
-    (18, 59, '2023-03-24 01:40:43', 41.68),
-    (19, 95, '2023-12-15 13:48:12', 244.25),
-    (20, 67, '2023-01-12 13:58:02', 206.91),
-    (21, 100, '2023-07-01 01:08:34', 1.45),
-    (22, 33, '2023-06-28 03:03:33', 150.44),
-    (23, 14, '2023-07-30 22:24:36', 118.65),
-    (24, 96, '2023-06-15 07:12:05', 59.52),
-    (25, 6, '2023-09-11 00:47:59', 230.44),
-    (26, 14, '2023-05-15 01:57:45', 2.86),
-    (27, 63, '2023-08-30 04:56:51', 227.01),
-    (28, 12, '2023-06-09 01:51:17', 79.88),
-    (29, 53, '2023-06-30 19:47:43', 3.01),
-    (30, 73, '2023-08-27 22:44:20', 164.24);
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (1, 59, '2023-06-16 18:00:57', '$145.72');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (2, 63, '2023-12-17 19:56:27', '$69.63');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (3, 52, '2023-12-18 16:34:09', '$80.67');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (4, 64, '2023-12-22 16:16:17', '$214.70');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (5, 96, '2023-02-11 05:14:46', '$105.25');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (6, 56, '2023-08-29 04:33:52', '$178.10');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (7, 100, '2023-11-01 10:52:41', '$92.30');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (8, 54, '2023-10-02 00:17:28', '$96.26');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (9, 100, '2023-10-30 22:37:25', '$185.74');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (10, 70, '2023-11-22 17:17:52', '$157.42');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (11, 17, '2023-04-28 10:43:57', '$79.82');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (12, 79, '2023-02-24 23:35:44', '$13.98');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (13, 73, '2023-10-23 16:31:15', '$142.31');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (14, 32, '2023-08-08 22:15:59', '$61.05');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (15, 14, '2023-06-15 10:39:21', '$188.13');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (16, 10, '2023-12-07 09:15:57', '$177.53');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (17, 6, '2023-12-07 15:54:17', '$48.34');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (18, 19, '2023-12-24 18:51:08', '$90.60');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (19, 19, '2022-12-31 02:17:37', '$189.65');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (20, 76, '2023-11-09 18:04:42', '$91.55');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (21, 59, '2023-01-01 09:00:31', '$161.85');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (22, 72, '2023-09-18 22:02:33', '$192.53');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (23, 73, '2023-05-23 00:49:57', '$89.77');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (24, 90, '2023-09-14 02:40:29', '$161.10');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (25, 14, '2023-10-17 08:06:19', '$105.35');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (26, 26, '2023-10-15 07:22:16', '$61.43');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (27, 59, '2023-12-12 20:36:23', '$50.64');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (28, 6, '2023-06-27 18:56:47', '$225.19');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (29, 84, '2023-10-10 16:03:27', '$222.31');
+insert into TripEstimate_MOCK_DATA (EstimationId, VehicleID, CurrentTime, Cost) values (30, 12, '2023-04-21 23:19:23', '$213.05');

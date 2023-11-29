@@ -1,102 +1,100 @@
-INSERT INTO Insurance (InsuranceId, InsuranceProvider, InsuranceCoverage, InsurancePremium, InsuranceDeductible)
-VALUES
-    (1, 'FastCover Insurance', 'Full Coverage', 697, 36),
-    (2, 'XYZ Insurance', 'Liability Coverage', 417, 37),
-    (3, 'Guardian Insurers', 'Comprehensive Coverage', 547, 32),
-    (4, 'SureSafety Insurance', 'Roadside Assistance', 861, 96),
-    (5, 'Guardian Insurers', 'Full Coverage', 303, 14),
-    (6, 'Shield Protect', 'Liability Coverage', 676, 67),
-    (7, 'SecureRide Insurance', 'Medical Payments Coverage', 635, 39),
-    (8, 'Guardian Shield', 'Liability Coverage', 669, 69),
-    (9, 'Swift Assurance', 'Comprehensive Coverage', 104, 87),
-    (10, 'Swift Assurance', 'Personal Injury Protection', 956, 72),
-    (11, 'Guardian Insurers', 'Medical Payments Coverage', 421, 78),
-    (12, 'Guardian Insurers', 'Full Coverage', 845, 25),
-    (13, 'Shield Protect', 'Full Coverage', 915, 51),
-    (14, 'XYZ Insurance', 'Full Coverage', 987, 19),
-    (15, 'XYZ Insurance', 'Liability Coverage', 782, 58),
-    (16, 'FastCover Insurance', 'Personal Injury Protection', 595, 35),
-    (17, 'Shield Protect', 'Collision Coverage', 283, 62),
-    (18, 'FastCover Insurance', 'Uninsured Motorist Coverage', 839, 61),
-    (19, 'SafeDrive Assurance', 'Medical Payments Coverage', 579, 60),
-    (20, 'Swift Assurance', 'Roadside Assistance', 244, 68),
-    (21, 'FastCover Insurance', 'Medical Payments Coverage', 503, 19),
-    (22, 'Guardian Shield', 'Collision Coverage', 997, 64),
-    (23, 'FastCover Insurance', 'Roadside Assistance', 135, 66),
-    (24, 'SafeDrive Assurance', 'Personal Injury Protection', 158, 87),
-    (25, 'SafeDrive Assurance', 'Rental Car Coverage', 160, 11),
-    (26, 'SecureRide Insurance', 'Personal Injury Protection', 491, 79),
-    (27, 'Swift Assurance', 'Rental Car Coverage', 671, 72),
-    (28, 'Shield Protect', 'Full Coverage', 374, 76),
-    (29, 'Guardian Insurers', 'Rental Car Coverage', 610, 87),
-    (30, 'Swift Assurance', 'Liability Coverage', 957, 33),
-    (31, 'XYZ Insurance', 'Liability Coverage', 397, 56),
-    (32, 'SafeDrive Assurance', 'Collision Coverage', 233, 96),
-    (33, 'TotalProtect Insurers', 'Personal Injury Protection', 486, 30),
-    (34, 'Guardian Insurers', 'Uninsured Motorist Coverage', 273, 36),
-    (35, 'TotalProtect Insurers', 'Full Coverage', 280, 65),
-    (36, 'SureSafety Insurance', 'Full Coverage', 208, 98),
-    (37, 'Guardian Shield', 'Collision Coverage', 807, 64),
-    (38, 'SafeDrive Assurance', 'Uninsured Motorist Coverage', 803, 83),
-    (39, 'TotalProtect Insurers', 'Uninsured Motorist Coverage', 855, 100),
-    (40, 'SafeDrive Assurance', 'Full Coverage', 676, 98),
-    (41, 'FastCover Insurance', 'Collision Coverage', 453, 62),
-    (42, 'SureSafety Insurance', 'Rental Car Coverage', 169, 20),
-    (43, 'SecureRide Insurance', 'Rental Car Coverage', 224, 21),
-    (44, 'FastCover Insurance', 'Comprehensive Coverage', 370, 49),
-    (45, 'FastCover Insurance', 'Medical Payments Coverage', 610, 47),
-    (46, 'Swift Assurance', 'Full Coverage', 894, 95),
-    (47, 'XYZ Insurance', 'Collision Coverage', 151, 33),
-    (48, 'FastCover Insurance', 'Full Coverage', 650, 23),
-    (49, 'Shield Protect', 'Medical Payments Coverage', 198, 69),
-    (50, 'TotalProtect Insurers', 'Comprehensive Coverage', 739, 59),
-    (51, 'XYZ Insurance', 'Liability Coverage', 285, 85),
-    (52, 'SureSafety Insurance', 'Underinsured Motorist Coverage', 524, 14),
-    (53, 'SafeDrive Assurance', 'Roadside Assistance', 665, 27),
-    (54, 'XYZ Insurance', 'Liability Coverage', 712, 94),
-    (55, 'Shield Protect', 'Comprehensive Coverage', 341, 53),
-    (56, 'TotalProtect Insurers', 'Collision Coverage', 371, 51),
-    (57, 'TotalProtect Insurers', 'Uninsured Motorist Coverage', 814, 63),
-    (58, 'Guardian Shield', 'Full Coverage', 464, 84),
-    (59, 'Swift Assurance', 'Liability Coverage', 541, 73),
-    (60, 'XYZ Insurance', 'Liability Coverage', 709, 16),
-    (61, 'SafeDrive Assurance', 'Medical Payments Coverage', 190, 89),
-    (62, 'XYZ Insurance', 'Rental Car Coverage', 208, 48),
-    (63, 'XYZ Insurance', 'Collision Coverage', 753, 55),
-    (64, 'SafeDrive Assurance', 'Roadside Assistance', 751, 85),
-    (65, 'SafeDrive Assurance', 'Full Coverage', 530, 62),
-    (66, 'Swift Assurance', 'Personal Injury Protection', 360, 11),
-    (67, 'FastCover Insurance', 'Uninsured Motorist Coverage', 557, 40),
-    (68, 'Guardian Shield', 'Collision Coverage', 114, 44),
-    (69, 'Swift Assurance', 'Underinsured Motorist Coverage', 705, 86),
-    (70, 'SureSafety Insurance', 'Uninsured Motorist Coverage', 265, 33),
-    (71, 'FastCover Insurance', 'Roadside Assistance', 171, 35),
-    (72, 'Guardian Shield', 'Rental Car Coverage', 607, 14),
-    (73, 'XYZ Insurance', 'Personal Injury Protection', 934, 68),
-    (74, 'SureSafety Insurance', 'Collision Coverage', 338, 54),
-    (75, 'TotalProtect Insurers', 'Collision Coverage', 840, 70),
-    (76, 'XYZ Insurance', 'Full Coverage', 139, 44),
-    (77, 'Shield Protect', 'Collision Coverage', 681, 35),
-    (78, 'SecureRide Insurance', 'Medical Payments Coverage', 641, 96),
-    (79, 'XYZ Insurance', 'Medical Payments Coverage', 507, 67),
-    (80, 'Shield Protect', 'Uninsured Motorist Coverage', 254, 45),
-    (81, 'XYZ Insurance', 'Medical Payments Coverage', 612, 18),
-    (82, 'XYZ Insurance', 'Roadside Assistance', 423, 79),
-    (83, 'XYZ Insurance', 'Liability Coverage', 570, 13),
-    (84, 'Guardian Shield', 'Roadside Assistance', 517, 34),
-    (85, 'SafeDrive Assurance', 'Personal Injury Protection', 182, 52),
-    (86, 'Shield Protect', 'Roadside Assistance', 326, 21),
-    (87, 'Guardian Insurers', 'Liability Coverage', 579, 45),
-    (88, 'Guardian Shield', 'Personal Injury Protection', 715, 45),
-    (89, 'Swift Assurance', 'Medical Payments Coverage', 625, 23),
-    (90, 'Shield Protect', 'Full Coverage', 194, 68),
-    (91, 'Guardian Insurers', 'Collision Coverage', 481, 71),
-    (92, 'Guardian Shield', 'Uninsured Motorist Coverage', 787, 71),
-    (93, 'Swift Assurance', 'Liability Coverage', 632, 41),
-    (94, 'XYZ Insurance', 'Personal Injury Protection', 172, 71),
-    (95, 'Swift Assurance', 'Personal Injury Protection', 434, 38),
-    (96, 'FastCover Insurance', 'Roadside Assistance', 329, 39),
-    (97, 'SecureRide Insurance', 'Rental Car Coverage', 693, 42),
-    (98, 'SafeDrive Assurance', 'Liability Coverage', 503, 30),
-    (99, 'Shield Protect', 'Comprehensive Coverage', 684, 18),
-    (100, 'SafeDrive Assurance', 'Rental Car Coverage', 659, 73);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (1, 'SureSafety Insurance', 'Comprehensive Coverage', 564, 88);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (2, 'FastCover Insurance', 'Comprehensive Coverage', 414, 27);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (3, 'Guardian Insurers', 'Liability Coverage', 906, 67);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (4, 'XYZ Insurance', 'Full Coverage', 369, 38);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (5, 'FastCover Insurance', 'Medical Payments Coverage', 457, 29);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (6, 'Swift Assurance', 'Personal Injury Protection', 915, 100);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (7, 'Shield Protect', 'Full Coverage', 184, 30);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (8, 'SureSafety Insurance', 'Rental Car Coverage', 667, 55);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (9, 'Guardian Insurers', 'Medical Payments Coverage', 329, 19);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (10, 'SureSafety Insurance', 'Personal Injury Protection', 982, 33);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (11, 'Guardian Shield', 'Uninsured Motorist Coverage', 432, 41);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (12, 'SureSafety Insurance', 'Roadside Assistance', 180, 74);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (13, 'SecureRide Insurance', 'Uninsured Motorist Coverage', 632, 79);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (14, 'SafeDrive Assurance', 'Comprehensive Coverage', 209, 20);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (15, 'SafeDrive Assurance', 'Rental Car Coverage', 797, 55);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (16, 'SafeDrive Assurance', 'Full Coverage', 857, 70);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (17, 'SecureRide Insurance', 'Underinsured Motorist Coverage', 190, 17);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (18, 'Shield Protect', 'Full Coverage', 908, 17);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (19, 'SecureRide Insurance', 'Full Coverage', 773, 71);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (20, 'TotalProtect Insurers', 'Personal Injury Protection', 945, 21);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (21, 'Swift Assurance', 'Underinsured Motorist Coverage', 827, 24);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (22, 'Guardian Shield', 'Underinsured Motorist Coverage', 349, 26);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (23, 'SureSafety Insurance', 'Uninsured Motorist Coverage', 805, 57);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (24, 'Guardian Insurers', 'Collision Coverage', 503, 15);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (25, 'SafeDrive Assurance', 'Liability Coverage', 870, 26);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (26, 'SafeDrive Assurance', 'Collision Coverage', 736, 33);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (27, 'SecureRide Insurance', 'Full Coverage', 956, 81);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (28, 'Swift Assurance', 'Roadside Assistance', 144, 10);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (29, 'SafeDrive Assurance', 'Rental Car Coverage', 853, 100);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (30, 'TotalProtect Insurers', 'Uninsured Motorist Coverage', 554, 46);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (31, 'Guardian Insurers', 'Rental Car Coverage', 345, 78);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (32, 'XYZ Insurance', 'Underinsured Motorist Coverage', 395, 13);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (33, 'SafeDrive Assurance', 'Comprehensive Coverage', 552, 11);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (34, 'SureSafety Insurance', 'Underinsured Motorist Coverage', 454, 92);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (35, 'Shield Protect', 'Full Coverage', 401, 25);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (36, 'FastCover Insurance', 'Underinsured Motorist Coverage', 559, 13);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (37, 'Guardian Insurers', 'Comprehensive Coverage', 624, 31);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (38, 'TotalProtect Insurers', 'Liability Coverage', 617, 38);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (39, 'Guardian Insurers', 'Liability Coverage', 935, 55);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (40, 'Guardian Insurers', 'Rental Car Coverage', 833, 64);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (41, 'TotalProtect Insurers', 'Rental Car Coverage', 906, 13);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (42, 'XYZ Insurance', 'Uninsured Motorist Coverage', 577, 18);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (43, 'XYZ Insurance', 'Full Coverage', 219, 21);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (44, 'Guardian Shield', 'Underinsured Motorist Coverage', 242, 16);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (45, 'FastCover Insurance', 'Roadside Assistance', 918, 80);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (46, 'Shield Protect', 'Rental Car Coverage', 447, 84);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (47, 'SafeDrive Assurance', 'Underinsured Motorist Coverage', 874, 71);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (48, 'Shield Protect', 'Medical Payments Coverage', 280, 14);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (49, 'XYZ Insurance', 'Collision Coverage', 405, 70);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (50, 'SafeDrive Assurance', 'Underinsured Motorist Coverage', 396, 81);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (51, 'XYZ Insurance', 'Rental Car Coverage', 627, 86);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (52, 'FastCover Insurance', 'Liability Coverage', 290, 21);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (53, 'SafeDrive Assurance', 'Full Coverage', 385, 38);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (54, 'XYZ Insurance', 'Full Coverage', 357, 34);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (55, 'SureSafety Insurance', 'Uninsured Motorist Coverage', 196, 54);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (56, 'Guardian Insurers', 'Collision Coverage', 538, 33);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (57, 'Guardian Shield', 'Liability Coverage', 302, 94);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (58, 'Guardian Shield', 'Rental Car Coverage', 353, 47);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (59, 'Guardian Shield', 'Liability Coverage', 342, 69);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (60, 'Guardian Shield', 'Comprehensive Coverage', 705, 80);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (61, 'SureSafety Insurance', 'Personal Injury Protection', 240, 93);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (62, 'TotalProtect Insurers', 'Uninsured Motorist Coverage', 242, 14);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (63, 'XYZ Insurance', 'Comprehensive Coverage', 874, 65);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (64, 'Swift Assurance', 'Full Coverage', 945, 26);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (65, 'Swift Assurance', 'Collision Coverage', 781, 98);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (66, 'Swift Assurance', 'Rental Car Coverage', 457, 38);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (67, 'Shield Protect', 'Medical Payments Coverage', 568, 39);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (68, 'Guardian Shield', 'Roadside Assistance', 763, 47);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (69, 'Guardian Insurers', 'Personal Injury Protection', 250, 36);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (70, 'SafeDrive Assurance', 'Full Coverage', 758, 85);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (71, 'TotalProtect Insurers', 'Liability Coverage', 474, 49);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (72, 'XYZ Insurance', 'Full Coverage', 465, 13);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (73, 'Shield Protect', 'Liability Coverage', 542, 93);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (74, 'XYZ Insurance', 'Full Coverage', 235, 61);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (75, 'SafeDrive Assurance', 'Liability Coverage', 814, 98);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (76, 'Swift Assurance', 'Underinsured Motorist Coverage', 724, 27);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (77, 'Guardian Insurers', 'Roadside Assistance', 505, 37);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (78, 'TotalProtect Insurers', 'Liability Coverage', 629, 24);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (79, 'SureSafety Insurance', 'Rental Car Coverage', 693, 64);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (80, 'SureSafety Insurance', 'Rental Car Coverage', 667, 72);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (81, 'Guardian Insurers', 'Roadside Assistance', 317, 45);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (82, 'SureSafety Insurance', 'Personal Injury Protection', 548, 80);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (83, 'FastCover Insurance', 'Roadside Assistance', 977, 30);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (84, 'FastCover Insurance', 'Collision Coverage', 539, 55);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (85, 'Shield Protect', 'Rental Car Coverage', 470, 69);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (86, 'SureSafety Insurance', 'Full Coverage', 207, 84);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (87, 'Shield Protect', 'Comprehensive Coverage', 684, 15);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (88, 'XYZ Insurance', 'Medical Payments Coverage', 360, 24);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (89, 'Swift Assurance', 'Medical Payments Coverage', 899, 53);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (90, 'Guardian Shield', 'Medical Payments Coverage', 807, 27);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (91, 'SecureRide Insurance', 'Uninsured Motorist Coverage', 529, 66);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (92, 'Shield Protect', 'Collision Coverage', 480, 21);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (93, 'SecureRide Insurance', 'Personal Injury Protection', 743, 72);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (94, 'Guardian Shield', 'Uninsured Motorist Coverage', 665, 20);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (95, 'Swift Assurance', 'Underinsured Motorist Coverage', 201, 21);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (96, 'SureSafety Insurance', 'Roadside Assistance', 803, 48);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (97, 'SecureRide Insurance', 'Uninsured Motorist Coverage', 734, 60);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (98, 'SafeDrive Assurance', 'Underinsured Motorist Coverage', 980, 54);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (99, 'SecureRide Insurance', 'Underinsured Motorist Coverage', 677, 53);
+insert into Insurance_MOCK_DATA (insuranceid, insuranceprovider, insurancecoverage, insurancepremium, insurancedeductible) values (100, 'FastCover Insurance', 'Personal Injury Protection', 202, 35);
