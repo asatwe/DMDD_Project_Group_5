@@ -1,60 +1,62 @@
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (1, 86, 'Credit Card - XXXX-XXXX-XXXX-XXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (2, 20, 'PayPal - user@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (3, 54, 'Debit Card - YYYY-YYYY-YYYY-YYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (4, 33, 'Bank Transfer - Account: XXXXXXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (5, 86, 'Routing: YYYYYYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (6, 14, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (7, 1, 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (8, 14, 'Debit Card - KKKK-KKKK-KKKK-KKKK');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (9, 3, 'PayPal - user2@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (10, 65, 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (11, 75, 'Routing: WWWW-WWWW-WWWW');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (12, 16, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (13, 50, 'Credit Card - XXXX-XXXX-XXXX-XXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (14, 30, 'PayPal - user@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (15, 79, 'Debit Card - YYYY-YYYY-YYYY-YYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (16, 90, 'Bank Transfer - Account: XXXXXXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (17, 47, 'Routing: YYYYYYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (18, 10, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (19, 90, 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (20, 16, 'Debit Card - KKKK-KKKK-KKKK-KKKK');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (21, 1, 'PayPal - user2@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (22, 78, 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (23, 26, 'Routing: WWWW-WWWW-WWWW');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (24, 19, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (25, 5, 'Credit Card - XXXX-XXXX-XXXX-XXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (26, 89, 'PayPal - user@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (27, 13, 'Debit Card - YYYY-YYYY-YYYY-YYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (28, 35, 'Bank Transfer - Account: XXXXXXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (29, 4, 'Routing: YYYYYYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (30, 84, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (31, 65, 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (32, 84, 'Debit Card - KKKK-KKKK-KKKK-KKKK');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (33, 6, 'PayPal - user2@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (34, 33, 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (35, 76, 'Routing: WWWW-WWWW-WWWW');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (36, 48, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (37, 66, 'Credit Card - XXXX-XXXX-XXXX-XXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (38, 68, 'PayPal - user@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (39, 36, 'Debit Card - YYYY-YYYY-YYYY-YYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (40, 61, 'Bank Transfer - Account: XXXXXXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (41, 95, 'Routing: YYYYYYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (42, 9, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (43, 68, 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (44, 2, 'Debit Card - KKKK-KKKK-KKKK-KKKK');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (45, 55, 'PayPal - user2@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (46, 2, 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (47, 49, 'Routing: WWWW-WWWW-WWWW');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (48, 97, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (49, 63, 'Credit Card - XXXX-XXXX-XXXX-XXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (50, 15, 'PayPal - user@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (51, 87, 'Debit Card - YYYY-YYYY-YYYY-YYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (52, 33, 'Bank Transfer - Account: XXXXXXXX');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (53, 20, 'Routing: YYYYYYYY');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (54, 4, 'Cash on Delivery');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (55, 52, 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (56, 59, 'Debit Card - KKKK-KKKK-KKKK-KKKK');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (57, 34, 'PayPal - user2@example.com');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (58, 26, 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (59, 35, 'Routing: WWWW-WWWW-WWWW');
-insert into Customer_MOCK_DATA (CustomerID, UserID, EncryptedPaymentInfo) values (60, 59, 'Cash on Delivery');
+INSERT INTO Customer (CustomerId, UserID, EncryptedPaymentInfo)
+VALUES
+    (1, 86,CONVERT(varbinary(MAX), 'Credit Card - XXXX-XXXX-XXXX-XXXX')),
+    (2, 20,CONVERT(varbinary(MAX), 'PayPal - user@example.com')),
+    (3, 54,CONVERT(varbinary(MAX), 'Debit Card - YYYY-YYYY-YYYY-YYYY')),
+    (4, 33,CONVERT(varbinary(MAX), 'Bank Transfer - Account: XXXXXXXX')),
+    (5, 86,CONVERT(varbinary(MAX), 'Routing: YYYYYYYY')),
+    (6, 14,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (7, 1,CONVERT(varbinary(MAX), 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ')),
+    (8, 14,CONVERT(varbinary(MAX), 'Debit Card - KKKK-KKKK-KKKK-KKKK')),
+    (9, 3,CONVERT(varbinary(MAX), 'PayPal - user2@example.com')),
+    (10, 65,CONVERT(varbinary(MAX), 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ')),
+    (11, 75,CONVERT(varbinary(MAX), 'Routing: WWWW-WWWW-WWWW')),
+    (12, 16,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (13, 50,CONVERT(varbinary(MAX), 'Credit Card - XXXX-XXXX-XXXX-XXXX')),
+    (14, 30,CONVERT(varbinary(MAX), 'PayPal - user@example.com')),
+    (15, 79,CONVERT(varbinary(MAX), 'Debit Card - YYYY-YYYY-YYYY-YYYY')),
+    (16, 90,CONVERT(varbinary(MAX), 'Bank Transfer - Account: XXXXXXXX')),
+    (17, 47,CONVERT(varbinary(MAX), 'Routing: YYYYYYYY')),
+    (18, 10,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (19, 90,CONVERT(varbinary(MAX), 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ')),
+    (20, 16,CONVERT(varbinary(MAX), 'Debit Card - KKKK-KKKK-KKKK-KKKK')),
+    (21, 1,CONVERT(varbinary(MAX), 'PayPal - user2@example.com')),
+    (22, 78,CONVERT(varbinary(MAX), 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ')),
+    (23, 26,CONVERT(varbinary(MAX), 'Routing: WWWW-WWWW-WWWW')),
+    (24, 19,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (25, 5,CONVERT(varbinary(MAX), 'Credit Card - XXXX-XXXX-XXXX-XXXX')),
+    (26, 89,CONVERT(varbinary(MAX), 'PayPal - user@example.com')),
+    (27, 13,CONVERT(varbinary(MAX), 'Debit Card - YYYY-YYYY-YYYY-YYYY')),
+    (28, 35,CONVERT(varbinary(MAX), 'Bank Transfer - Account: XXXXXXXX')),
+    (29, 4,CONVERT(varbinary(MAX), 'Routing: YYYYYYYY')),
+    (30, 84,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (31, 65,CONVERT(varbinary(MAX), 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ')),
+    (32, 84,CONVERT(varbinary(MAX), 'Debit Card - KKKK-KKKK-KKKK-KKKK')),
+    (33, 6,CONVERT(varbinary(MAX), 'PayPal - user2@example.com')),
+    (34, 33,CONVERT(varbinary(MAX), 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ')),
+    (35, 76,CONVERT(varbinary(MAX), 'Routing: WWWW-WWWW-WWWW')),
+    (36, 48,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (37, 66,CONVERT(varbinary(MAX), 'Credit Card - XXXX-XXXX-XXXX-XXXX')),
+    (38, 68,CONVERT(varbinary(MAX), 'PayPal - user@example.com')),
+    (39, 36,CONVERT(varbinary(MAX), 'Debit Card - YYYY-YYYY-YYYY-YYYY')),
+    (40, 61,CONVERT(varbinary(MAX), 'Bank Transfer - Account: XXXXXXXX')),
+    (41, 95,CONVERT(varbinary(MAX), 'Routing: YYYYYYYY')),
+    (42, 9,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (43, 68,CONVERT(varbinary(MAX), 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ')),
+    (44, 2,CONVERT(varbinary(MAX), 'Debit Card - KKKK-KKKK-KKKK-KKKK')),
+    (45, 55,CONVERT(varbinary(MAX), 'PayPal - user2@example.com')),
+    (46, 2,CONVERT(varbinary(MAX), 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ')),
+    (47, 49,CONVERT(varbinary(MAX), 'Routing: WWWW-WWWW-WWWW')),
+    (48, 97,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (49, 63,CONVERT(varbinary(MAX), 'Credit Card - XXXX-XXXX-XXXX-XXXX')),
+    (50, 15,CONVERT(varbinary(MAX), 'PayPal - user@example.com')),
+    (51, 87,CONVERT(varbinary(MAX), 'Debit Card - YYYY-YYYY-YYYY-YYYY')),
+    (52, 33,CONVERT(varbinary(MAX), 'Bank Transfer - Account: XXXXXXXX')),
+    (53, 20,CONVERT(varbinary(MAX), 'Routing: YYYYYYYY')),
+    (54, 4,CONVERT(varbinary(MAX), 'Cash on Delivery')),
+    (55, 52,CONVERT(varbinary(MAX), 'Credit Card - ZZZZ-ZZZZ-ZZZZ-ZZZZ')),
+    (56, 59,CONVERT(varbinary(MAX), 'Debit Card - KKKK-KKKK-KKKK-KKKK')),
+    (57, 34,CONVERT(varbinary(MAX), 'PayPal - user2@example.com')),
+    (58, 26,CONVERT(varbinary(MAX), 'Bank Transfer - Account: QQQQ-QQQQ-QQQQ')),
+    (59, 35,CONVERT(varbinary(MAX), 'Routing: WWWW-WWWW-WWWW')),
+    (60, 59,CONVERT(varbinary(MAX), 'Cash on Delivery'));
