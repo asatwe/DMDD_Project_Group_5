@@ -6,8 +6,6 @@ BEGIN
 END
 GO
 
--- DROP DATABASE TaxiManagementSystem
-
 -- Create a new database named 'TaxiManagementSystem'
 CREATE DATABASE TaxiManagementSystem;
 GO
@@ -16,8 +14,11 @@ GO
 USE TaxiManagementSystem;
 GO
 
--- Drop table statements
+-- Switch to the 'sample' database
+USE [sample];
+GO
 
+-- Drop table statements
 -- ServiceRequest Table
 DROP TABLE IF EXISTS ServiceRequest;
 GO
@@ -110,6 +111,7 @@ CREATE TABLE Customer (
     UserID INT FOREIGN KEY REFERENCES [User](UserID),       -- Foreign key referencing the User table to link with user information
     EncryptedPaymentInfo VARBINARY(MAX)                    -- Encrypted payment information for the customer
 );
+GO
 
 -- Create a master key
 CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'AmeySatwe23';
@@ -195,10 +197,3 @@ CREATE TABLE InsuranceLogs (
     InsuranceEndDate DATE NOT NULL                                      -- End date of the insurance coverage
 );
 GO
-
-
-
-
-
-
-

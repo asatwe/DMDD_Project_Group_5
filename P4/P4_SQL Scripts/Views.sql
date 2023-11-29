@@ -3,23 +3,57 @@ go
 
 -- View to get Customer Ride History
 CREATE VIEW CustomerRideHistoryView AS
-	SELECT users.UserFName+' '+users.UserLName as "Customer Full Name",
-			count(trip.Cost) as "Total Rides",
-		   sum(trip.Cost) as "Total Ride Spend"
-		   --Avg(trip.Cost) as "Average Cost per Ride"
-	FROM [User] users JOIN Customer cust on users.UserID = cust.CustomerID  LEFT JOIN  RideRequest ride on cust.CustomerID = ride.CustomerID  join TripEstimate trip on ride.EstimationID = trip.EstimationId
-	WHERE ride.TripCompletionFlag = 1
-	GROUP BY users.UserFName+' '+users.UserLName;
-	
+    SELECT
+        -- Concatenate the user's first name and last name to form the full name
+        users.UserFName + ' ' + users.UserLName AS "Customer Full Name",
+        
+        -- Count the total number of rides for each customer
+        COUNT(trip.Cost) AS "Total Rides",
+        
+        -- Sum the total cost spent on rides for each customer
+        SUM(trip.Cost) AS "Total Ride Spend"
+        
+        -- AVG(trip.Cost) AS "Average Cost per Ride" -- Commented out as not currently used
+    FROM
+        -- Join the User table to get customer information
+        [User] users
+        JOIN Customer cust ON users.UserID = cust.CustomerID
+        
+        -- Left join to include customers who may not have made any ride requests
+        LEFT JOIN RideRequest ride ON cust.CustomerID = ride.CustomerID
+        
+        -- Join the TripEstimate table to get information about each ride
+        JOIN TripEstimate trip ON ride.EstimationID = trip.EstimationId
+    WHERE
+        -- Filter for completed trips (TripCompletionFlag = 1)
+        ride.TripCompletionFlag = 1
+    GROUP BY
+        -- Group the results by customer full name to aggregate information for each customer
+        users.UserFName + ' ' + users.UserLName;
 
-select * from CustomerRideHistoryView order by "Total Ride Spend" desc;
+-- Retrieve data from the CustomerRideHistoryView
+SELECT *
+FROM CustomerRideHistoryView
+ORDER BY "Total Ride Spend" DESC;
 
---View to get ServiceRequest Details
-CREATE VIEW ServiceRequestDetailsView As
-SELECT v.VehicleId, v.VehicleType, s.ServiceDetails, s.ServiceName, s.ServiceCompanyName
-FROM ServiceRequest  sr  RIGHT JOIN Vehicle v ON sr.VehicleId = v.VehicleId JOIN [Service] s ON sr.ServiceId = s.ServiceId;
+-- View to get ServiceRequest Details
+CREATE VIEW ServiceRequestDetailsView AS
+    -- Selecting columns from Vehicle, ServiceRequest, and Service tables
+    SELECT
+        v.VehicleId,
+        v.VehicleType,
+        s.ServiceDetails,
+        s.ServiceName,
+        s.ServiceCompanyName
+    FROM
+        -- Using RIGHT JOIN to include Vehicle records even if there are no matching ServiceRequest records
+        Vehicle v
+    RIGHT JOIN ServiceRequest sr ON sr.VehicleId = v.VehicleId
+    JOIN [Service] s ON sr.ServiceId = s.ServiceId;
 
-select * from ServiceRequestDetailsView;
+-- Retrieve data from the ServiceRequestDetailsView
+SELECT *
+FROM ServiceRequestDetailsView;
 
 CREATE VIEW CustomerAndVehicleView AS
 SELECT

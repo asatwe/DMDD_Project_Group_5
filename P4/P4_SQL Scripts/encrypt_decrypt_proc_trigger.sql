@@ -14,9 +14,6 @@ BEGIN
     CLOSE SYMMETRIC KEY MySymmetricKey;
 END;
 
-
-
-
 -- -- CREATE TRIGGER EncryptPaymentInfo
 -- -- ON Customer
 -- -- AFTER INSERT
@@ -31,4 +28,3 @@ END;
 
 -- --     CLOSE SYMMETRIC KEY MySymmetricKey;
 -- -- END;
-
