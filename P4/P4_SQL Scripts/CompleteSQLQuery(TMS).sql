@@ -88,7 +88,7 @@ CREATE TABLE Vehicle (
     VehicleId INT PRIMARY KEY,                                         -- Unique identifier for each vehicle
     VehicleType VARCHAR(50),                                           -- Type or model of the vehicle
     ServiceInfo VARCHAR(255),                                          -- Information about the vehicle's service history
-    InsuranceInfo CHAR(1) CHECK (InsuranceInfo IN ('YES', 'NO'))       -- Check constraint for InsuranceInfo (Y for present, N for not present)
+    InsuranceInfo CHAR(1) CHECK (InsuranceInfo IN ('Y', 'N'))       -- Check constraint for InsuranceInfo (Y for present, N for not present)
 );
 GO
 

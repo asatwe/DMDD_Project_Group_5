@@ -1,0 +1,11 @@
+VehicleId,VehicleType,ServiceInfo,InsuranceInfo
+1,Sedan,Regularly serviced,Y
+2,SUV,Bi-annual check-ups,Y
+3,Truck,Heavy-duty maintenance,N
+4,Compact,Fuel-efficient model,Y
+5,Convertible,Specialized care,N
+6,Hatchback,Monthly check-ups,Y
+7,Minivan,Family-friendly model,Y
+8,Limousine,Luxury vehicle maintenance,N
+9,Electric Car,Battery system inspection,Y
+10,Motorcycle,Specialized two-wheeler care,N

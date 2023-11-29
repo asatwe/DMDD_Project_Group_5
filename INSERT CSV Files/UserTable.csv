@@ -1,0 +1,11 @@
+UserID,UserFName,UserLName,PhoneNumber,EmailId,DOB,BankAccInfo,UserType
+1,John,Doe,123-456-7890,john.doe@email.com,01-01-1990,Bank XXXX-XXXX-XXXX,C
+2,Alice,Johnson,987-654-3210,alice.johnson@email.com,15-05-1985,Bank YYYY-YYYY-YYYY,D
+3,Bob,Smith,555-123-4567,bob.smith@email.com,30-09-1978,Bank ZZZZ-ZZZZ-ZZZZ,C
+4,Eva,Williams,111-222-3333,eva.williams@email.com,20-07-1995,Bank ABCD-1234-5678,D
+5,Chris,Taylor,777-888-9999,chris.taylor@email.com,10-03-1982,Bank WXYZ-5678-9012,C
+6,Laura,Anderson,555-789-1234,laura.anderson@email.com,15-12-1987,Bank EEEE-5678-9012,C
+7,Michael,Jones,222-333-4444,michael.jones@email.com,25-06-1993,Bank FFFF-1234-5678,D
+8,Sophia,Martinez,666-777-8888,sophia.martinez@email.com,05-09-1975,Bank GGGG-9876-5432,C
+9,Dylan,Reyes,888-999-0000,dylan.reyes@email.com,20-03-1998,Bank HHHH-3456-7890,D
+10,Olivia,Miller,111-222-3333,olivia.miller@email.com,10-11-1980,Bank IIII-2345-6789,C
