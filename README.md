@@ -10,6 +10,10 @@ A repository for DMDD group project.
 
 # [Final ERD (P3 Deliverable)](./P3/P3_DMDD_Project.pdf)
 
+# [Database implementation (P4 Deliverable)](./P4/P4_Summary_sheet.docx)
+
+
+
 ## Members
 - Amey Satwe
 - Aaditya Kasbekar
