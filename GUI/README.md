@@ -15,4 +15,16 @@
 ```python3 app.py```
 
 
-# PS. Please ensure that username and password for the database are entered in the app.py file.
+# PS. Please ensure that username and password for the database are entered in the app.py file. Line number 9
+
+```python
+url_object = URL.create(
+    "mssql+pymssql",
+    username="username",
+    password="password",  # plain (unescaped) text
+    host="localhost",
+    port="1433",
+    database="TaxiManagementSystem",
+)
+```
+# Please note username and password refers to the username and password on your local systems.
