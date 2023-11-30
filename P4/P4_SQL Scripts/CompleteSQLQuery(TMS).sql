@@ -1,10 +1,22 @@
 -- Check if the database 'TaxiManagementSystem' exists
 IF EXISTS (SELECT name FROM sys.databases WHERE name = N'TaxiManagementSystem')
 BEGIN
-    -- Drop (delete) the database 'TaxiManagementSystem' if it exists
-    DROP DATABASE TaxiManagementSystem;
+     -- Drop (delete) the database 'TaxiManagementSystem' if it exists
+     DROP DATABASE TaxiManagementSystem;
 END
 GO
+
+-- Use the master database
+USE master;
+GO
+
+-- Set the TaxiManagementSystem database to single-user mode with immediate rollback
+ALTER DATABASE TaxiManagementSystem
+SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+
+-- Drop the TaxiManagementSystem database
+DROP DATABASE [TaxiManagementSystem];
 
 -- Create a new database named 'TaxiManagementSystem'
 CREATE DATABASE TaxiManagementSystem;
@@ -83,25 +95,27 @@ CREATE TABLE Insurance (
 );
 GO
 
--- Vehicle Table
+-- Vehicle Table with Table-level CHECK Constraint for InsuranceInfo
 CREATE TABLE Vehicle (
-    VehicleId INT PRIMARY KEY,                                         -- Unique identifier for each vehicle
-    VehicleType VARCHAR(50),                                           -- Type or model of the vehicle
-    ServiceInfo VARCHAR(255),                                          -- Information about the vehicle's service history
-    InsuranceInfo CHAR(1) CHECK (InsuranceInfo IN ('Y', 'N'))       -- Check constraint for InsuranceInfo (Y for present, N for not present)
+    VehicleId INT PRIMARY KEY,              -- Unique identifier for each vehicle
+    VehicleType VARCHAR(50),                -- Type or model of the vehicle
+    ServiceInfo VARCHAR(255),               -- Information about the vehicle's service history
+    InsuranceInfo CHAR(1),                  -- Insurance information (Y for present, N for not present)
+    CONSTRAINT CK_InsuranceInfo CHECK (InsuranceInfo IN ('Y', 'N'))  -- Table-level CHECK constraint
 );
 GO
 
--- User Table
+-- User Table with Table-level CHECK Constraint for UserType
 CREATE TABLE [User] (
-    UserID INT PRIMARY KEY,                                         -- Unique identifier for each user
-    UserFName VARCHAR(50) NOT NULL,                                 -- User's first name
-    UserLName VARCHAR(50) NOT NULL,                                 -- User's last name
-    PhoneNumber VARCHAR(15) NOT NULL,                               -- User's phone number
-    EmailId VARCHAR(255) NOT NULL,                                  -- User's email address
-    DOB DATE,                                                       -- User's date of birth
-    BankAccInfo VARCHAR(255) NOT NULL,                              -- User's bank account information
-    UserType CHAR(1) NOT NULL CHECK (UserType IN ('D', 'C')),       -- Type of user (D for driver, C for customer)
+    UserID INT PRIMARY KEY,                          -- Unique identifier for each user
+    UserFName VARCHAR(50) NOT NULL,                  -- User's first name
+    UserLName VARCHAR(50) NOT NULL,                  -- User's last name
+    PhoneNumber VARCHAR(15) NOT NULL,                -- User's phone number
+    EmailId VARCHAR(255) NOT NULL,                   -- User's email address
+    DOB DATE,                                        -- User's date of birth
+    BankAccInfo VARCHAR(255) NOT NULL,               -- User's bank account information
+    UserType CHAR(1) NOT NULL,                        -- Type of user (D for driver, C for customer)
+    CONSTRAINT CK_UserType CHECK (UserType IN ('D', 'C'))  -- Table-level CHECK constraint for UserType
 );
 GO
 
@@ -144,7 +158,7 @@ CREATE TABLE TripEstimate (
 );
 GO
 
--- RideRequest Table
+-- RideRequest Table with Table-level CHECK Constraint for TripType
 CREATE TABLE RideRequest (
     RequestId INT PRIMARY KEY NOT NULL,                                                 -- Unique identifier for each ride request
     EstimationID INT FOREIGN KEY REFERENCES TripEstimate(EstimationId),                 -- Foreign key referencing TripEstimate table
@@ -157,10 +171,11 @@ CREATE TABLE RideRequest (
     PickUpLocationLongitude DECIMAL(10, 6) NOT NULL,                                    -- Longitude of the pickup location
     DestinationLocationLatitude DECIMAL(10, 6) NOT NULL,                                -- Latitude of the destination location
     DestinationLocationLongitude DECIMAL(10, 6) NOT NULL,                               -- Longitude of the destination location
-    TripType VARCHAR(50) NOT NULL CHECK (TripType IN ('City Cab', 'Out Station Cab')),  -- Type of the trip
+    TripType VARCHAR(50) NOT NULL,                                                       -- Type of the trip
     TripCompletionFlag BIT NOT NULL,                                                    -- Flag indicating trip completion status
     PickUpLocation VARCHAR(50) NOT NULL,                                                -- Textual description of the pickup location
-    DestinationLocation VARCHAR(50) NOT NULL                                            -- Textual description of the destination location
+    DestinationLocation VARCHAR(50) NOT NULL,                                           -- Textual description of the destination location
+    CONSTRAINT CK_TripType CHECK (TripType IN ('City Cab', 'Out Station Cab'))          -- Table-level CHECK constraint for TripType
 );
 GO
 
@@ -227,6 +242,25 @@ CREATE SYMMETRIC KEY MySymmetricKey
    WITH ALGORITHM = AES_256
    ENCRYPTION BY CERTIFICATE MyCertificate;
 GO
+
+-- Create a trigger named EncryptPaymentInfo
+CREATE TRIGGER EncryptPaymentInfo
+ON Customer
+AFTER INSERT
+AS
+BEGIN
+    -- Open the symmetric key for decryption using the specified certificate
+    OPEN SYMMETRIC KEY MySymmetricKey DECRYPTION BY CERTIFICATE MyCertificate;
+
+    -- Update the EncryptedPaymentInfo column with encrypted values
+    UPDATE Customer
+    SET EncryptedPaymentInfo = ENCRYPTBYKEY(KEY_GUID('MySymmetricKey'), i.EncryptedPaymentInfo)
+    FROM Customer c
+    INNER JOIN inserted i ON c.CustomerID = i.CustomerID;
+
+    -- Close the symmetric key
+    CLOSE SYMMETRIC KEY MySymmetricKey;
+END;
 
 -- Stored procedure GetDriverStatistics
 -- The stored procedure is used to retrieve statistics for a specific driver
@@ -336,6 +370,9 @@ BEGIN
     CLOSE SYMMETRIC KEY MySymmetricKey;
 END;
 
+-- Execute the DecryptPaymentInfo stored procedure for CustomerID 1
+EXEC DecryptPaymentInfo 1;
+
 -- UDF ServiceDueinDays
 -- The user-defined function to calculate the number of days remaining until a service is due
 CREATE FUNCTION ServiceDueinDays
@@ -356,20 +393,16 @@ BEGIN
     RETURN @NoOfDays;
 END;
 
--- Using the ServiceDueinDays user-defined function to
--- Select all columns from the ServiceRequest table and calculate the number of days remaining until service is due.
--- Alias the calculated column as "Service due in days"
-SELECT 
-    sr.*, 
-    dbo.ServiceDueinDays(sr.ServiceDueDate, sr.ReqDateTime) AS "Service due in days"
-FROM 
-    ServiceRequest sr;
+-- Add a computed column named ServiceDueIn to the ServiceRequest table using UDF
+-- The ServiceDueIn column is computed using the dbo.ServiceDueinDays UDF based on ServiceDueDate and ReqDateTime
+ALTER TABLE ServiceRequest 
+ADD ServiceDueIn AS dbo.ServiceDueinDays(ServiceDueDate, ReqDateTime);
 
 -- UDF CustomerCategory
 -- The user-defined function to categorize customers based on their age groups
 CREATE FUNCTION CustomerCategory
 (
-    @DateOfBirth DATETIME   -- Date of birth of the customer
+    @USERID INT   -- Date of birth of the customer
 )
 RETURNS VARCHAR(20)
 AS
@@ -377,8 +410,10 @@ BEGIN
     -- Declare variables to store the age in years and the customer category
     DECLARE @AgeInYears INT
     DECLARE @Category VARCHAR(20);
+    DECLARE @DateOfBirth DATE;
 
     -- Calculate the age of the customer in years
+    SELECT @DateOfBirth = DOB from [User] u join Customer c on u.UserID = @USERID
     SET @AgeInYears = DATEDIFF(YEAR, @DateOfBirth, GETDATE());
 
     -- Categorize the customer based on age
@@ -395,15 +430,10 @@ BEGIN
     RETURN @Category;
 END;
 
--- Using the CustomerCategory user-defined function.
--- Selecting customer details including full name, phone number, date of birth, and categorizing them by age
-SELECT 
-    u.UserFName + ' ' + u.UserLName AS "Customer Full Name",   -- Concatenating first and last name for the full name
-    u.PhoneNumber AS "Customer Phone Number",                  -- Phone number of the customer
-    u.DOB AS "Date of Birth",                                  -- Date of birth of the customer
-    dbo.CustomerCategory(u.DOB) AS "Customer Category"         -- Categorizing the customer by age using the user-defined function
-FROM  Customer c 
-JOIN  [User] u ON c.UserID = u.UserID;
+-- Add a computed column named Category to the Customer table using UDF
+-- The Category column is computed using the dbo.CustomerCategory UDF based on CustomerID
+ALTER TABLE Customer
+ADD Category AS dbo.CustomerCategory(CustomerID);
 
 -- View to get CustomerRideHistoryView
 CREATE VIEW CustomerRideHistoryView AS
@@ -1441,6 +1471,7 @@ VALUES
     (87, 50, '6/13/2023', '11/14/2024'),
     (95, 33, '11/28/2023', '12/26/2024');
 
+/* DISPLAY STATEMENTS */
 -- Displaying Data from Service Table
 SELECT * FROM Service;
 
